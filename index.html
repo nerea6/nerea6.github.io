@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Nerea</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css"
+</head>
+<body>
+<br>
+   
+ <div class="Titulo">
+        <h1> BLOG INSTITUTO CLAUDIO SÁNCHEZ ALBORNOZ</h1>
+    </div>
+
+<div class= "foto">
+<img src="imagenes/instituto.gif">
+</div>
+
+
+<br>
+ 
+<h2>Fecha y Hora:
+    <div>
+        <span id="datetime"></span>
+        <script>
+          function updateDateTime() {
+            const now = new Date();
+            const currentDateTime = now.toLocaleString();
+            document.querySelector('#datetime').textContent = currentDateTime;
+          }
+        setInterval(updateDateTime, 1000);
+        </script>
+        </div>
+</h2>
+ 
+
+
+
+
+<section class="hola1">
+<div class="columna1">
+
+            <br><br>
+     <div class="mapa" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.385976937801!2d-5.5741958999999985!3d42.604256899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a8f12a7cff9%3A0xcf14c8a725e8691e!2sIES%20Claudio%20S%C3%A1nchez%20Albornoz!5e0!3m2!1ses!2ses!4v1727693364586!5m2!1ses!2ses" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+ 
+     <br>
+     <p id="CONTACTO">CONTACTO</p>  
+Instituto de educación secundaria <br>
+   Calle: Av. de Mariano Andrés, 1, 24008 León <br>
+    Número de teléfono: 987 87 61 46 <br>
+                <a href="http://iesclaudiosanchezalbornoz.centros.educa.jcyl.es/sitio/">Web Intituto</a> <br>
+     Instagram: <a href="http://www.instagram.com/iescsa/">@iescsa</a> <br>
+     Facebook: <a href="http://www.facebook.com/iesclaudiosanchezalbornoz.centros.educa.jcyl.es/">@ IES Claudio Sánchez Albornoz </a> <br>
+ 
+
+    
+ 
+</div>
+ 
+ 
+ 
+ 
+<div class="columna2">
+ 
+ <p id="AUTOR">HERRAMIENTAS DIGITALES</p>
+ En el mundo digital actual existen aplicaciones que pueden <br>
+ mejorar la manera de estudiar y de aprender. En ellas podemos<br>
+tomar notas y organizas proyectos hasta practicar idiomas o <br>
+ resolver problemas matemáticos. 
+
+<br><br>
+
+MENSAJE:
+<br>
+ 
+<textarea name="" id="texto" cols="30" rows="10" placeholder="Escribe aquí tu mensaje" min = "3" max = "1500"   ></textarea>
+</textarea>
+    <div id="mensaje"></div>
+    <script>
+        setInterval(function(){
+            let cuadro = document.getElementById("texto").value
+            let lienzo = document.getElementById("mensaje").innerHTML = cuadro
+        }, 100)
+    </script>
+
+
+<br><br>
+
+<label> Nombre
+    </label>
+ 
+        <input type = "text"  min = "3" max = "50" size = "60" placeholder="Escribe aquí tu nombre" >
+<br><br>
+ <label> Apellidos 
+    </label>
+ 
+        <input type = "text"  min = "3" max = "50" size = "60" placeholder="Escribe aquí tus apellidos" >
+ 
+
+ <br><br>
+ <label> Correo
+    </label>
+ 
+        <input type = "text"  min = "3" max = "50" size = "60" placeholder="Escribe aquí tu correo" >
+ 
+ </div>
+
+
+
+
+<div class="columna3">
+
+ 1. <a href="http://www.notion.so/es-es">Notion</a> <br>
+ 2. <a href="http://quizlet.com/es">Quizlet</a>  <br>
+ 3. <a href="http://es.khanacademy.org/">Kan Academy</a>  <br>
+ 4. <a href="http://photomath.es/">photomath</a>  <br>
+ 5. <a href="http://wolfram alpha">Wolfram Alpha</a>  <br>
+ 6. <a href="http://www.geogebra.org/classic?lang=es">GeoGebra</a>  <br>
+ 7. <a href="http://www.youtube.com/watch?v=4oU0Vbta48Y">Física-tutoriales</a>  <br>
+ 8. <a href="http://es.duolingo.com/">Duolingo</a>  <br>
+ 9. <a href="http://www.linguee.es/">Linguee</a>  <br>
+ 10. <a href="http://ta-tum.com/#welcome">Ta-Tum</a>  <br>
+ 11. <a href="http://www.canva.com/es_es/">Canva</a>  <br>
+12.  <a href="http://pixlr.com/es/">Pixlr</a>  <br>
+
+
+
+
+</div>
+ 
+ 
+ 
+ 
+ 
+</section>
+ 
+  
+<br><br>
+<section class="chati">
+ 
+<br><br>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie de Página con Derechos de Autor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	  
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+  
